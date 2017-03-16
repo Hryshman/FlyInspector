@@ -112,19 +112,27 @@ var fish = {
     color: "blue",
     size: 29
 };
-
-
 var items = [sphere, planet, ship, ananas, plane, polo, fish];
     console.log(items.length);
     y=items.length;
-debugger;
 var multi=1;
-for (var x = 0; x < y; x++) {
-    multi*=items[x].size;
-    if (items[x].id === 1 && items[x].name === 'Its plane') {
-    console.log(items[x]);
-    }
-    if (x == y-1) {
-    console.log(multi);
-  }
-}
+debugger;
+var service = {
+     findMyObj: function (items, id, name) {
+          for (var x = 0; x < y; x++){
+          if(items[x].id === id && items[x].name === name ) {
+            return items[x];
+         }
+       }
+     },
+      calcMult: function (items) {
+           for (var x = 0; x < y; x++){
+             multi*=items[x].size;
+              }
+                return multi;
+        }
+      }
+
+
+console.log('service', service.findMyObj(items, 1, 'Its plane'));
+console.log('service', service.calcMult(items));
