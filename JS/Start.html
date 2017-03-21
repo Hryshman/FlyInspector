@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <script type="text/javascript" src="jquery-3.2.0.js"></script>
 <title>Hryshman</title>
+<style type="text/css">
+#global{
+  width: 200px;
+  background: #254455;
+  color: white;
+  border: solid 2px black;
+  text-shadow: black 0 0 4px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: cursive;
+}
+/*#linkgit{
+  background: black;
+  width: 50px;
+  margin: 0 auto;
+  text-align: center;
+  border: solid 1px white;
+}*/
+   A:visited {
+    color: white;
+     }
+   A:active {
+    color: grey;
+     }
+</style>
 </head>
 <body>
-  <p align="center">
-    <b>Hello!</b> <br>
-     Let's start <br>
-     <a href="http://redmine.luch15.com:8081/issues/103">Лекция №1</a>
-   </p>
+  <div id="global" class='global' >
+    <div style="margin: 0 auto;">
+    <p><b>Hello!</b><br>
+      Let's start <br>
+     <div style="width: 50px; margin: 0 auto; text-align: center" id="linkgit"><a href="https://github.com/Hryshman/FlyInspector">Git</a>
+     </div>
+    </p>
+  </div>
+</div>
  <script src="plane.js"></script>
 </body>
 </html>
